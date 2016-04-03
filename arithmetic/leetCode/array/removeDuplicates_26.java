@@ -38,7 +38,7 @@ public class RemoveDuplicates_26 {
 
     public static void main(String[] args) {
         RemoveDuplicates_26 test = new RemoveDuplicates_26();
-        int[] nums = {};
+        int[] nums = {1,2,2,3,3,4,5};
         System.out.println(test.removeDuplicates(nums));
 
     }
