@@ -1,5 +1,6 @@
 package array;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -34,11 +35,12 @@ public class ContainsDuplicate_217 {
      * @param nums
      * @return
      */
+
     public boolean containsDuplicate2(int[] nums) {
         if (nums == null || nums.length == 0){
             return false;
         }
-        Set arraySet = new HashSet<Integer>();
+        Set<Integer> arraySet = new HashSet<Integer>();
         for (Integer num : nums){
             if (!arraySet.add(num)){
                 return true;
@@ -49,8 +51,23 @@ public class ContainsDuplicate_217 {
         return false;
     }
 
+    /**
+     * 第三种排序实现
+     * @param nums
+     * @return
+     */
+    public boolean containsDuplicate3(int[] nums) {
+        Arrays.sort(nums);
+        for(int i =0; i<nums.length; i++){
+            if(i+1<nums.length && nums[i]==nums[i+1]){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
-        Set arraySet = new HashSet<Integer>();
+        Set<Integer> arraySet = new HashSet<Integer>();
         arraySet.add(4);
 
     }
