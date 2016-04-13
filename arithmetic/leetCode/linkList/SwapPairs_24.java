@@ -17,6 +17,7 @@ import util.ListNode;
 //        Subscribe to see which companies asked this question
 //交换相邻节点并返回头部
 public class SwapPairs_24 {
+    //自己实现的lowB方法
     public ListNode swapPairs(ListNode head) {
         if (head==null||head.next==null){
             return head;
