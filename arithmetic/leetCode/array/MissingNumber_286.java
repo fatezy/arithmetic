@@ -9,7 +9,7 @@ import java.util.Arrays;
 //Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
 //
 //        For example,
-//        Given nums = [0, 1, 3] return 2.
+//        Given nums = [0, 1, 3] return 2
 public class MissingNumber_286 {
     public int missingNumber(int[] nums){
 // TODO: 2016/4/19
