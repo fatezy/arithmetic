@@ -1,6 +1,9 @@
 package hashTableh;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 /**
  * author： 张亚飞
@@ -26,6 +29,28 @@ public class SingleNumber_136 {
 
        return 0;
     }
+
+//虽然效率不高，但是出结果了
+    public int singleNumber3(int[] nums) {
+        int sum = 0;
+        for (int i:
+             nums) {
+            sum+=i;
+        }
+        Set<Integer> set = new HashSet<>();
+        for (int i:
+             nums) {
+            set.add(i);
+        }
+        Integer sum2 =0 ;
+        Iterator iterator  = set.iterator();
+        while (iterator.hasNext()){
+            sum2 += (int)iterator.next();
+        }
+        return sum2*2-sum;
+
+    }
+
 
     //运算符逆天版
     //转化为二进制，相同返回0，不同返回1
