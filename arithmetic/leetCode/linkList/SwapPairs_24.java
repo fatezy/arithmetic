@@ -25,10 +25,13 @@ public class SwapPairs_24 {
         ListNode temp = head.next;
         ListNode returnHead = head.next;
         while (node!=null&&node.next!=null){
+            //先交换元素
             temp = node.next;
            node.next = node.next.next;
             temp.next = node;
+            //记录下node的下一个元素
             temp=node.next;
+            //分两种情况考虑
             if (node.next!=null&&node.next.next!=null){
                 node.next=node.next.next;
                 node=temp;
