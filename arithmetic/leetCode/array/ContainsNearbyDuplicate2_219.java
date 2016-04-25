@@ -3,6 +3,7 @@ package array;
 import org.junit.Test;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 /**
@@ -52,6 +53,17 @@ public class ContainsNearbyDuplicate2_219 {
                 map.put(nums[i],i);
             }
 
+        }
+        return false;
+    }
+    //优秀解法
+    public boolean containsNearbyDuplicate4(int[] nums, int k) {
+        HashSet<Integer> hs = new HashSet<>();
+        for(int i = 0; i < nums.length; i++) {
+            if(i > k) {
+                hs.remove(nums[i-k-1]);
+            }
+            if(!hs.add(nums[i])) return true;
         }
         return false;
     }
