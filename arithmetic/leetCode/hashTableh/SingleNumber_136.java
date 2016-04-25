@@ -30,7 +30,7 @@ public class SingleNumber_136 {
        return 0;
     }
 
-//虽然效率不高，但是出结果了
+//虽然效率不高，但是出结果通过了
     public int singleNumber3(int[] nums) {
         int sum = 0;
         for (int i:

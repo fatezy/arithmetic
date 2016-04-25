@@ -16,7 +16,7 @@ import java.util.HashSet;
 //        82 + 22 = 68
 //        62 + 82 = 100
 //        12 + 02 + 02 = 1
-    //注：第二个数不是2是平方
+    //注：第二个数不是2，是平方的意思
 public class IsHappy_202 {
     public boolean isHappy(int n){
         HashSet<Integer> set = new HashSet<>();
