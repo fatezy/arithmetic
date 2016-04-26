@@ -14,6 +14,7 @@ package array;
 //        [1,3,5,6], 7 → 4
 //        [1,3,5,6], 0 → 0
     //找插入点
+    //泪奔，一遍过的感觉就是好，为毛这个medium比easy还简单
 public class SearchInsert_35 {
     public int searchInsert(int[] nums, int target) {
         int len = nums.length;
