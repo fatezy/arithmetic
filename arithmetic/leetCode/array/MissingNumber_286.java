@@ -12,8 +12,8 @@ import java.util.Arrays;
 //        Given nums = [0, 1, 3] return 2
 public class MissingNumber_286 {
     public int missingNumber(int[] nums){
-// TODO: 2016/4/19
-        //这就过了？
+
+
 
         int i=0;
         Arrays.sort(nums);
