@@ -43,4 +43,19 @@ public class MergeTwoLists_21 {
         return result.next;
 
     }
+    public ListNode mergeTwoLists3(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode cur = dummy;
+        cur.next =  l1;
+        while(l1 != null && l2 != null) {
+            if(l1.val > l2.val) {
+                cur.next = l2;
+                l2 = l1;
+            }
+            cur = cur.next;
+            l1 = cur.next;
+        }
+        if(l2 != null) cur.next = l2;
+        return dummy.next;
+    }
 }
