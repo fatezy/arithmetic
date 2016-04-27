@@ -7,12 +7,12 @@ package BinarySearch;
 //Implement pow(x, n).
     //求x的n次幂
 public class Pow_50 {
-    double pow(double x, int n)
-    {
-        if(n==0)
-            return 1.0;
-        if(n<0)
-            return 1.0/pow(x,-n);
-        return x*pow(x,n-1);
+    public double myPow(double x, int n) {
+        if(n==0)    return 1;
+        else if(n==1)   return x;
+        if(n<0&&n>Integer.MIN_VALUE) return 1/myPow(x,-n);
+        else if(n==Integer.MIN_VALUE)   return 1/myPow(x*x,n>>1);
+        if(n%2==0)  return myPow(x*x,n>>1);
+        else    return myPow(x*x,n>>1)*x;
     }
 }
