@@ -43,6 +43,22 @@ public class PascalTriangle_118 {
         return list;
 
     }
+    //同样的代码别人的就很美，先求出来之后再add
+    public List<List<Integer>> generate2(int numRows) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<Integer> row, pre = null;
+        for (int i = 0; i < numRows; ++i) {
+            row = new ArrayList<Integer>();
+            for (int j = 0; j <= i; ++j)
+                if (j == 0 || j == i)
+                    row.add(1);
+                else
+                    row.add(pre.get(j - 1) + pre.get(j));
+            pre = row;
+            res.add(row);
+        }
+        return res;
+    }
     @Test
     public void test(){
         generate(4);
