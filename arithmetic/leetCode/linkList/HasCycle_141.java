@@ -23,7 +23,7 @@ public class HasCycle_141 {
         return false;
 
     }
-    //快慢指针法
+    //快慢指针法，空间复杂度O（1）
     public boolean hasCycle2(ListNode head) {
         if(head==null || head.next==null) return false;
         ListNode fast=head,slow=head;
