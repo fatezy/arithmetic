@@ -67,6 +67,70 @@ public class SearchRotatedSortedArray_33 {
         return -1;
     }
 
+
+    //递归解法
+    public int search3(int[] A, int target) {
+        int len = A.length;
+        if (len == 0) return -1;
+        return binarySearch(A, 0, len-1, target);
+    }
+
+    public int binarySearch(int[] A, int left, int right, int target) {
+        if (left > right) return -1;
+
+        int mid = (left + right) / 2;
+        if (A[left] == target) return left;
+        if (A[mid] == target) return mid;
+        if (A[right] == target) return right;
+
+        //图示情况一
+        if (A[left] < A[right]) {
+            if (target < A[left] || target > A[right]) {    //target不在数组范围内
+                return -1;
+            } else if (target < A[mid]) {                   //target在左边
+                return binarySearch(A, left+1, mid-1, target);
+            } else {                                        //target在右边
+                return binarySearch(A, mid+1, right-1, target);
+            }
+        }
+        //图示情况二
+        else if (A[left] < A[mid]) {
+            if (target > A[left] && target < A[mid]) {      //target在左边
+                return binarySearch(A, left+1, mid-1, target);
+            } else {                                        //target在右边
+                return binarySearch(A, mid+1, right-1, target);
+            }
+        }
+        //图示情况三
+        else {
+            if (target > A[mid] && target < A[right]) {     //target在右边
+                return binarySearch(A, mid+1, right-1, target);
+            } else{                                         //target在左边
+                return binarySearch(A, left+1, mid-1, target);
+            }
+        }
+    }
+
+    public int search4(int[] A, int target) {
+        int l = 0;
+        int r = A.length - 1;
+        while (l <= r) {
+            int mid = (l + r) / 2;
+            if (target == A[mid]) return mid;
+            if (A[l] <= A[r]) {
+                if (target < A[mid]) r = mid - 1;
+                else l = mid + 1;
+            } else if (A[l] <= A[mid]) {
+                if (target > A[mid] || target < A[l]) l = mid + 1;
+                else r = mid - 1;
+            } else {
+                if (target < A[mid] || target > A[r]) r = mid - 1;
+                else l = mid + 1;
+            }
+        }
+        return -1;
+    }
+
     @Test
   public void test(){
     int[] nums = {1,3};
