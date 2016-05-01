@@ -2,6 +2,7 @@ package tree;
 
 import util.TreeNode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,8 +21,19 @@ import java.util.List;
 //        return [1,3,2].
     //中序遍历二叉树
 public class InorderTraversal_94 {
+    List<Integer> list = new ArrayList<>();
     public List<Integer> inorderTraversal(TreeNode root) {
-        return null;
+        if (root==null) return list ;
+        else {
+
+            inorderTraversal(root.left);
+            if (root != null) {
+                list.add(root.val);
+            }
+            inorderTraversal(root.right);
+        }
+
+        return list;
 
     }
 
