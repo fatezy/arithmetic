@@ -3,6 +3,7 @@ package tree;
 import util.TreeNode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -28,10 +29,28 @@ import java.util.List;
     //二叉搜索树，层序遍历
     //// TODO: 2016/5/2
 public class BinaryTreeLevelOrderTraversal_102 {
-
+    List<List<Integer>> nodes = new ArrayList<>();
     public List<List<Integer>> levelOrder(TreeNode root) {
+        if (root == null){
+            return nodes;
+        }
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (queue.size()!=0){
+            int size = queue.size();
+            List<Integer> layer_vals = new ArrayList<>();
+            while (size != 0 ){
+                //得到头元素
+                TreeNode temp = queue.poll();
+                layer_vals.add(temp.val);
+                if (temp.left != null) queue.add(temp.left);
+                if (temp.right!=null) queue.add(temp.right);
+                size--;
+            }
 
+            nodes.add(layer_vals);
+        }
 
-        return null;
+        return nodes;
     }
 }
