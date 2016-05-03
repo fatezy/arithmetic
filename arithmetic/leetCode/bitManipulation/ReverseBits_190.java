@@ -21,4 +21,8 @@ public class ReverseBits_190 {
         }
         return res;
     }
+
+    public static void main(String[] args) {
+        System.out.println(reverseBits(1));
+    }
 }
