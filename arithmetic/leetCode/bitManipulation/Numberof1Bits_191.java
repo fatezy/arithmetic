@@ -13,6 +13,7 @@ import org.junit.Test;
 public class Numberof1Bits_191 {
     public static int hammingWeight(int n) {
         int res = 0;
+        //闲的蛋疼，试试他给的例子怎么样
         for (int i = -1; i <31 ; i++) {
             if (((n >> i)&1) == 1 ){
                 res++;
