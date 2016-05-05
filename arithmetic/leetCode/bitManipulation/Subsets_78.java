@@ -15,6 +15,7 @@ import java.util.List;
 //        The solution set must not contain duplicate subsets.
     //求子集，返回结果单个子集合必须递增
     //可以把每一个子集看成一个boolean类型的数组，共有len个子集
+    //这题其实出的并不严密，没有给出数据范围，我写的解法最大只适用于32的数的数组
 public class Subsets_78 {
     public static List<List<Integer>> subsets(int[] nums) {
         Arrays.sort(nums);
