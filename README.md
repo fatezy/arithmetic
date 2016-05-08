@@ -1,4 +1,4 @@
- # arithmetic
+
 ### leetcode
   * array 数组
   * binarySearch 二分查找
