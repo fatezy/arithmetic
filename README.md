@@ -1,5 +1,5 @@
-# arithmetic
---leetcode
+ # arithmetic
+### leetcode
   * array 数组
   * binarySearch 二分查找
   * bitMainipulation
@@ -13,5 +13,6 @@
   * string 字符串
   * tree 树
   * twoPoints 双指针
-  * util 工具
---剑指offer 
+  * util 工具 
+  
+### 剑指offer 
