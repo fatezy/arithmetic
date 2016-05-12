@@ -11,6 +11,7 @@ import java.util.*;
 //
 //        For example,
 //        Given [1,1,1,2,2,3] and k = 2, return [1,2].
+    //优先队列，小的在队首
 public class TopKFrequentElements_347 {
     public List<Integer> topKFrequent(int[] nums, int k) {
         Map<Integer,Integer> map = new HashMap<>();
@@ -33,13 +34,15 @@ public class TopKFrequentElements_347 {
         for (int num : nums) {
             freq.put(num, freq.getOrDefault(num, 0) + 1);
         }
-
+        //实现comparator接口
         PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>((o1, o2) -> o1.getValue() - o2.getValue());
 
         for (Map.Entry<Integer, Integer> entry : freq.entrySet()) {
             if (pq.size() < k) {
+                //加入优先队列
                 pq.offer(entry);
             } else if (entry.getValue() > pq.peek().getValue()) {
+                //弹出队列
                 pq.poll();
                 pq.offer(entry);
             }
