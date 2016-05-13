@@ -16,6 +16,7 @@ import java.util.Arrays;
 //        2、从前到后，找到最后一个满足条件的位置，其条件为：
 //
 //        此位置是数组的第x个，其值为y，必须满足 y >= x;
+    //貌似和Hashmap并没有关系
 public class H_Index_274 {
     public int hIndex(int[] citations) {
         if (citations.length == 0) {
