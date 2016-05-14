@@ -23,6 +23,7 @@ public class AddTwoNumbers_2 {
             }else {
                 val1 = l1.val ;
             }
+
             if (l2==null){
                 val2 = 0;
             }else {
