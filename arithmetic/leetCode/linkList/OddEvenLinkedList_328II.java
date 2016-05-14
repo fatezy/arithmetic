@@ -22,7 +22,7 @@ import java.util.List;
 //        The relative order inside both the even and odd groups should remain as it was in the input.
 //        The first node is considered odd, the second node even and so on ...
     //相对顺序不变奇偶分治
-    //// TODO: 2016/5/14  
+    //// TODO: 2016/5/14
     //题目理解错了，是奇数位和偶数位分离
 public class OddEvenLinkedList_328 {
     public static ListNode oddEvenList(ListNode head) {
