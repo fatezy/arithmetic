@@ -40,6 +40,28 @@ public class RemoveDuplicatesfromSortedArrayII_80 {
         }
         return t;
     }
+    //优化了空间复杂度
+    public int removeDuplicates2(int[] nums) {
+        if (nums.length <= 2) {
+            return nums.length;
+        }
+        int length = nums.length;
+        int start = 0, times = 1;
+        for (int i = 1; i < length; i++) {
+            if (nums[i] != nums[start]) {
+                start++;
+                nums[start] = nums[i];
+                times = 1;
+            } else {
+                times++;
+                if (times == 2) {
+                    start++;
+                    nums[start] = nums[start - 1];
+                }
+            }
+        }
+        return start + 1;
+    }
 
     public static void main(String[] args) {
         int[] a = {1,1,1,2,2,3};
