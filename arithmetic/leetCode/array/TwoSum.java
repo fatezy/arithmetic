@@ -42,6 +42,7 @@ public class TwoSum {
              b) {
             System.out.println(i);
         }
+        Math.sqrt(4534534);
 
     }
 }

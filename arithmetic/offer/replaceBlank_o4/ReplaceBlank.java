@@ -26,4 +26,16 @@ public class ReplaceBlank {
 		return stringBuilder.toString();
 		
 	}
+
+	public static String replaceSpace(StringBuffer str) {
+		String  str2 = str.toString();
+		str2 = str2.replace(" ","%20");
+		return str2;
+	}
+
+	public static void main(String[] args) {
+		StringBuffer stringBuffer= new StringBuffer("We Are Happy");
+		System.out.println(replaceSpace(stringBuffer));
+	}
+
 }
