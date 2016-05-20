@@ -6,7 +6,7 @@ import util.ListNode;
  * time：2016/5/20  17:38
  */
 //逆转链表
-public class ReverseList {
+public class ReverseList_16 {
     public static ListNode ReverseList(ListNode head) {
         if ((head == null) || (head.next == null)){
             return head;
