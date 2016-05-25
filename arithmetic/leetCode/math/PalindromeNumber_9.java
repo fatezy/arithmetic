@@ -17,7 +17,6 @@ public class PalindromeNumber_9 {
             ans = ans * 10 + num % 10;
             num = num / 10;
         }
-        if (ans != x) return false;
-        return true;
+        return ans == x;
     }
 }
