@@ -16,8 +16,8 @@ package array;
 //        [ 7, 6, 5 ]
 //        ]
     //螺旋式打印矩阵
-    //// TODO: 2016/5/26  
-public class SpiralMatrixII {
+
+public class SpiralMatrixII_59{
 
 
     public static int[][] generateMatrix2(int n) {
