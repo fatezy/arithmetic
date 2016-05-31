@@ -45,6 +45,7 @@ public class Permutations_46 {
             }
 
             total.addAll(permute(newList, newSrc));
+
         }
 
         return total;
