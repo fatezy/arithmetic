@@ -15,7 +15,7 @@ import java.util.List;
 //        [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].
     //获取数组的所有排序
 public class Permutations_46 {
-    public List<List<Integer>> permute(int[] num) {
+    public static List<List<Integer>> permute(int[] num) {
         List<Integer> src = new ArrayList<>();
         for (int i=0; i<num.length; i++) {
             src.add(num[i]);
@@ -27,8 +27,8 @@ public class Permutations_46 {
 
         return permute(list, src);
     }
-
-    private List<List<Integer>> permute(List<List<Integer>> list, List<Integer> src) {
+//输入为（1，2，3）时，遍历的顺序为（1，2，3）（1，3，2）。。。。。
+    private static List<List<Integer>> permute(List<List<Integer>> list, List<Integer> src) {
         if (src.isEmpty())
             return list;
 
@@ -74,6 +74,6 @@ public class Permutations_46 {
 
     public static void main(String[] args) {
         int[] a = {1,2,3};
-        permute2(a);
+        permute(a);
     }
 }
