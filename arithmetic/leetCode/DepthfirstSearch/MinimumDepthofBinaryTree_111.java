@@ -11,7 +11,7 @@ import util.TreeNode;
 //        The minimum depth is the number of nodes along the shortest
 // path from the root node down to the nearest leaf node.
     //求二叉树的最小深度
-    //// TODO: 2016/6/4  
+
 public class MinimumDepthofBinaryTree_111 {
     static int minDepth = Integer.MAX_VALUE;
     public static int minDepth(TreeNode root) {
