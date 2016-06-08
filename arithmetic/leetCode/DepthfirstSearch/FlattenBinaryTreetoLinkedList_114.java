@@ -61,4 +61,5 @@ public class FlattenBinaryTreetoLinkedList_114 {
         while (cur.right != null) cur = cur.right;
         cur.right = right;
     }
+
 }
