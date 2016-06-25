@@ -12,7 +12,24 @@ package array;
 //        Note: You may not slant the container.
     //给了一组非负数，每个数代表一个点，向x轴做垂线，找两个垂线的容量最大
     // TODO: 2016/4/26
-public class MaxArea_11 {
+public class  ContainerWithMostWater_11 {
+    public static int maxArea(int[] height) {
+        int maxArea = 0;
+        int left = 0;
+        int right = height.length - 1;
+        while (left < right){
+            maxArea = Math.max(maxArea,Math.min(height[left],height[right])*(right - left));
+            if (height[left]<height[right]){
+                left++;
+            }else {
+                right--;
+            }
+
+        }
+        return maxArea;
+
+    }
+
 
 
 }
