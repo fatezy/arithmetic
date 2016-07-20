@@ -74,6 +74,6 @@ public class Permutations_46 {
 
     public static void main(String[] args) {
         int[] a = {1,2,3};
-        permute(a);
+        System.out.println(permute(a));
     }
 }
