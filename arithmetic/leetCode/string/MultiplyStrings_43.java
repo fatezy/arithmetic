@@ -29,10 +29,11 @@ public class MultiplyStrings_43 {
         }
 
         StringBuilder sb = new StringBuilder();
-        for(int p : pos) if(!(sb.length() == 0 && p == 0)) sb.append(p);
-        return sb.length() == 0 ? "0" : sb.toString();
+    //查找第一个不为0的数
+    for(int p : pos) if(!(sb.length() == 0 && p == 0)) sb.append(p);
+    return sb.length() == 0 ? "0" : sb.toString();
 
-    }
+}
 
     public static void main(String[] args) {
         System.out.println(multiply("9", "8"));
