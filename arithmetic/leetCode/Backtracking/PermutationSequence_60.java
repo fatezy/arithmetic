@@ -25,6 +25,8 @@ import java.util.List;
 
 
     //给你个数n，得到它的全排列，然后得到第k个排列
+
+// TODO: 2016/7/20  
 public class PermutationSequence_60 {
 
 
