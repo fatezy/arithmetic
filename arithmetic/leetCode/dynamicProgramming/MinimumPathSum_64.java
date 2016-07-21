@@ -38,6 +38,7 @@ public class MinimumPathSum_64 {
     }
 
 //递归解法
+//递归超时
     public static int minPathSum3(int[][] grid) {
 
         return minPath(grid.length-1,grid[0].length-1,grid);
@@ -58,7 +59,7 @@ public class MinimumPathSum_64 {
 
     }
 
-//递归超时
+
     public static int minPathSum2(int[][] grid) {
         int m = grid.length;// row
         int n = grid[0].length; // column
