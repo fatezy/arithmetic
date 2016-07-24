@@ -62,10 +62,33 @@ public class RemoveDuplicatesfromSortedListII_82 {
     }
 
 
+
+    public static ListNode deleteDuplicates2(ListNode head) {
+        if(head==null) return null;
+        ListNode FakeHead=new ListNode(0);
+        FakeHead.next=head;
+        ListNode pre=FakeHead;
+        ListNode cur=head;
+        while(cur!=null){
+            //如果当前的node的值和下一个node的值相同，当前node后移
+            while(cur.next!=null&&cur.val==cur.next.val){
+                cur=cur.next;
+            }
+            if(pre.next==cur){
+                pre=pre.next;
+            }
+            else{
+                pre.next=cur.next;
+            }
+            cur=cur.next;
+        }
+        return FakeHead.next;
+    }
+
     public static void main(String[] args) {
         Link_List list = new Link_List();
-        list.initList(1,6,2,2,3);
-        deleteDuplicates(list.getFirstNode());
+        list.initList(2,2,3);
+        deleteDuplicates2(list.getFirstNode());
 
         System.out.println("ok");
 
