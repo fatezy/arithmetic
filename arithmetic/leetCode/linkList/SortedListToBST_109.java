@@ -10,7 +10,7 @@ import util.TreeNode;
 //Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
     //给你一个有序链表把它转化为一个平衡二叉树
     //// TODO: 2016/5/14
-    //回头再看
+
 public class SortedListToBST_109 {
     public TreeNode sortedListToBST(ListNode head) {
         if(head==null){
