@@ -24,7 +24,6 @@ import java.util.List;
 //
 //        ["1->2->5", "1->3"]
     //写出所有根到叶子节点的所有路径
-    //// TODO: 2016/5/2  
 public class BinaryTreePaths_257 {
    static List<Integer> list = new ArrayList<>();
    static List<String> stringList = new ArrayList<>();
@@ -76,6 +75,7 @@ public class BinaryTreePaths_257 {
 
 
     public static void main(String[] args) {
+
         LinkedList<TreeNode> list = new LinkedList<>();
         list.add(new TreeNode(1));
         list.add(new TreeNode(2));
@@ -88,8 +88,9 @@ public class BinaryTreePaths_257 {
         list.add(new TreeNode(9));
         TreeNode node = Tree.tree_init(list);
 
-        List<String> strs =  binaryTreePaths(null);
+        List<String> strs =  binaryTreePaths(node);
         System.out.println("ok");
+
 
     }
 }
