@@ -1,8 +1,10 @@
 package tree;
 
+import util.Tree;
 import util.TreeNode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -24,23 +26,70 @@ import java.util.List;
     //写出所有根到叶子节点的所有路径
     //// TODO: 2016/5/2  
 public class BinaryTreePaths_257 {
-    List<Integer> list = new ArrayList<>();
-
-    public List<String> binaryTreePaths(TreeNode root) {
-        return null;
+   static List<Integer> list = new ArrayList<>();
+   static List<String> stringList = new ArrayList<>();
+    public static List<String> binaryTreePaths(TreeNode root) {
+        stringList = new ArrayList<>();
+        if (root != null){
+            preorderTraversal(root);
+        }
+        return stringList;
     }
 
-    public List<Integer> preorderTraversal(TreeNode root) {
-        if (root==null)
-            return list;
-        else {
-            if (root!=null){
-                list.add(root.val);
-            }
-            preorderTraversal(root.left);
-            preorderTraversal(root.right);
+
+    public static String intListToStr(List<Integer> list){
+        if (list == null)
+            return null;
+        if (list.size() == 1){
+            return String.valueOf(list.get(0));
+        }
+        String str = "";
+        for (int i = 0; i <list.size()-1 ; i++) {
+            str  += list.get(i)+"->";
         }
 
-        return list;
+        str += list.get(list.size()-1);
+        return str;
+
+    }
+
+    public static void preorderTraversal(TreeNode root) {
+       if (root.left == null && root.right == null) {
+           list.add(root.val);
+           stringList.add(intListToStr(list));
+           list.remove(list.size()-1);
+       }
+
+        if (root.left != null) {
+            list.add(root.val);
+            preorderTraversal(root.left);
+        }
+
+        if (root.right !=null){
+            list.add(root.val);
+            preorderTraversal(root.right);
+        }
+        if (list.size()>0) {
+            list.remove(list.size() - 1);
+        }
+    }
+
+
+    public static void main(String[] args) {
+        LinkedList<TreeNode> list = new LinkedList<>();
+        list.add(new TreeNode(1));
+        list.add(new TreeNode(2));
+        list.add(new TreeNode(3));
+        list.add(new TreeNode(4));
+        list.add(new TreeNode(5));
+        list.add(null);
+        list.add(null);
+        list.add(new TreeNode(8));
+        list.add(new TreeNode(9));
+        TreeNode node = Tree.tree_init(list);
+
+        List<String> strs =  binaryTreePaths(null);
+        System.out.println("ok");
+
     }
 }
