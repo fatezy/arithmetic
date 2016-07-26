@@ -25,6 +25,7 @@ import java.util.List;
 //        minStack.pop();
 //        minStack.top();      --> Returns 0.
 //        minStack.getMin();   --> Returns -2.
+    //实现一个微型栈
 public class MinStack_155 {
     List<Integer> list = null;
     public MinStack_155() {
