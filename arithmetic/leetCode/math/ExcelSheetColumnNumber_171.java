@@ -18,7 +18,7 @@ package math;
 //        AA -> 27
 //        AB -> 28
     //把excel的数据转化为正常的数字
-public class ExcelSheetColumnNumber_172 {
+public class ExcelSheetColumnNumber_171 {
     public static int titleToNumber(String s) {
         if (s==null && s.length()==0){
             return 0;
