@@ -22,7 +22,7 @@ package string;
 //
 //Show Tags
 
-public class lengthOfLastWord {
+public class  lengthOfLastWord {
 	
 	public static void main(String[] args) {
 	
