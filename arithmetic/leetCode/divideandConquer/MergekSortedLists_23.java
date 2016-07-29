@@ -10,6 +10,7 @@ import util.ListNode;
 
 //Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
     //合并k个有序链表，并分析其复杂度
+    //递归，分治
 public class MergekSortedLists_23 {
 
     public static ListNode mergeKLists2(ListNode[] lists){
