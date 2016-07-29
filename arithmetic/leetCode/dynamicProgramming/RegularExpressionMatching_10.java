@@ -24,7 +24,7 @@ package dynamicProgramming;
 //        isMatch("aab", "c*a*b") → true
     //实现简单的正则匹配
 public class RegularExpressionMatching_10 {
-    public boolean isMatch(String s, String p) {
+    public static boolean isMatch(String s, String p) {
         if (p.isEmpty()) {
             return s.isEmpty();
         }
