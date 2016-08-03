@@ -71,4 +71,8 @@ public class NextPermutation_31 {
         }
     }
 
+
+    public static void main(String[] args) {
+
+    }
 }

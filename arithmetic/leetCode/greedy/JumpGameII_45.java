@@ -42,9 +42,23 @@ public class JumpGameII_45 {
 
     }
 
-
+    public static int jump2(int[] A) {
+        //代表步数
+        int sc = 0;
+        //代表当前这步可以到达的最远距离
+        int e = 0;
+        int max = 0;
+        for(int i=0; i<A.length-1; i++) {
+            max = Math.max(max, i+A[i]);
+            if( i == e ) {
+                sc++;
+                e = max;
+            }
+        }
+        return sc;
+    }
     public static void main(String[] args) {
         int[] nums = {2,3,1,1,4};
-        System.out.println(jump(nums));
+        System.out.println(jump2(nums));
     }
 }

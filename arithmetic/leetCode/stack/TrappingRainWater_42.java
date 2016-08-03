@@ -10,13 +10,10 @@ package stack;
 //        Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
     //求陷阱中可以放多少水
 public class TrappingRainWater_42 {
-    public int trap(int[] height) {
-        return 0;
-
-    }
 
 
-    public static int trap2(int[] A) {
+
+    public static int trap(int[] A) {
         if (A.length < 3) return 0;
 
         int ans = 0;
@@ -47,6 +44,6 @@ public class TrappingRainWater_42 {
 
     public static void main(String[] args) {
         int[] nums = {0,1,0,2,1,0,1,3,2,1,2,1};
-        trap2(nums);
+        trap(nums);
     }
 }
