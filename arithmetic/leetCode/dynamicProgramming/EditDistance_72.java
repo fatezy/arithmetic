@@ -25,10 +25,10 @@ public class EditDistance_72 {
         int len1 = word1.length();
         int len2 = word2.length();
         int [][] costs = new int[len1+1][len2+1];
-        for (int i = 0; i <len1 ; i++) {
+        for (int i = 0; i <=len1 ; i++) {
             costs[i][0] = i;
         }
-        for (int i = 0; i <len2 ; i++) {
+        for (int i = 0; i <=len2 ; i++) {
             costs[0][i] = i;
         }
         for (int i = 0; i <len1 ; i++) {
@@ -48,5 +48,10 @@ public class EditDistance_72 {
 
 
         return costs[len1][len2];
+    }
+
+
+    public static void main(String[] args) {
+        minDistance("","a");
     }
 }
