@@ -14,6 +14,7 @@ import java.util.List;
 //        Given "25525511135",
 //
 //        return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
+    //给你一个字符串，看可以解析为多少个ip
 public class RestoreIPAddresses_93 {
     public static List<String> restoreIpAddresses(String s) {
         return restore(new int[0], s);
