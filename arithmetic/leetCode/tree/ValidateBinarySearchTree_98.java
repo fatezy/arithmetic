@@ -32,34 +32,44 @@ public class ValidateBinarySearchTree_98 {
     public static boolean isValidBST(TreeNode root) {
         return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
+//错误的解法
+//    public static boolean isValidBST(TreeNode root,long min,long max){
+//        if (root == null) return true;
+//        if (root.left ==  null&&root.right == null&&root.val>min&&root.val<max)
+//            return true;
+//        if (root.left ==  null&&root.right == null)
+//            return false;
+//        boolean left = true;
+//        boolean right = true;
+//        if (root.val<=min||root.val>=max)
+//            return false;
+//
+//        if (root.left.val<root.val) {
+//                left = isValidBST(root.left, Long.MIN_VALUE, root.val);
+//        }
+//
+//
+//        if (root.right.val>root.val) {
+//                right = isValidBST(root.right, root.val, Long.MAX_VALUE);
+//        }
+//
+//        return left&&right;
+//    }
 
-    public static boolean isValidBST(TreeNode root,long min,long max){
+
+    public static boolean isValidBST(TreeNode root, long minVal, long maxVal) {
         if (root == null) return true;
-        if (root.left ==  null&&root.right == null&&root.val>min&&root.val<max)
-            return true;
-        if (root.left ==  null&&root.right == null)
-            return false;
-        boolean left = true;
-        boolean right = true;
-        if (root.left != null){
-            if (root.left.val<root.val) {
-                left = isValidBST(root.left, Long.MIN_VALUE, root.val);
-            }else left = false;
-        }
-
-        if (root.right != null) {
-            if (root.right.val>root.val) {
-                right = isValidBST(root.right, root.val, Long.MAX_VALUE);
-            }else right = false;
-        }
-        return left&&right;
+        if (root.val >= maxVal || root.val <= minVal) return false;
+        return isValidBST(root.left, minVal, root.val) && isValidBST(root.right, root.val, maxVal);
     }
 
 
     public static void main(String[] args) {
-        TreeNode node = new TreeNode(5);
-        node.left = new TreeNode(14);
-        node.left.left = new TreeNode(1);
+        TreeNode node = new TreeNode(10);
+        node.left = new TreeNode(5);
+       node.right = new TreeNode(15);
+        node.right.left = new TreeNode(6);
+        node.right.right = new TreeNode(20);
         System.out.println(isValidBST(node));
     }
 

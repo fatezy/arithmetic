@@ -22,7 +22,6 @@ import java.util.List;
 //        ]
     //求出所有的结合
     //回溯
-    //// TODO: 2016/5/15
 public class Combinations_77 {
 //    public List<List<Integer>> combine(int n, int k) {
 //        List<List<Integer>> lists = new ArrayList<>();

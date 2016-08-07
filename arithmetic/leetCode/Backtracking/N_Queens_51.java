@@ -8,7 +8,6 @@ import java.util.List;
  * author： 张亚飞
  * time：2016/8/3  21:16
  */
-//// TODO: 2016/8/3
 //The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two
 // queens attack each other.
 //
