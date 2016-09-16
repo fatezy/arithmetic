@@ -1,5 +1,7 @@
 package dynamicProgramming;
 
+import java.util.Arrays;
+
 /**
  * author： 张亚飞
  * time：2016/8/6  10:59
@@ -44,10 +46,21 @@ package dynamicProgramming;
 //
 //        Given two strings s1 and s2 of the same length, determine if
 // s2 is a scrambled string of s1.
-    //判断s2是不是s1的一个scrambled
-    //// TODO: 2016/8/6
+    //判断s2是不是s1的一个scrambled，即判断两个字符串是否能通过二叉树的左右子树交换相等
 public class ScrambleString_87 {
+//    把s1，s2分别分成两部分，判断s1的两部分和s2的两部分是否分别可以交换相等
     public boolean isScramble(String s1, String s2) {
+        if (s1.length() != s2.length()) return false;
+        if (s1.equals(s2)) return true;
+        char[] c1 = s1.toCharArray();
+        char[] c2 = s2.toCharArray();
+        Arrays.sort(c1);
+        Arrays.sort(c2);
+        if (!Arrays.equals(c1, c2)) return false;
+        for (int i = 1; i < s1.length(); i++) {
+            if (isScramble(s1.substring(0, i), s2.substring(0, i)) && isScramble(s1.substring(i), s2.substring(i))) return true;
+            if (isScramble(s1.substring(0, i), s2.substring(s2.length() - i)) && isScramble(s1.substring(i), s2.substring(0, s2.length() - i))) return true;
+        }
         return false;
     }
 
