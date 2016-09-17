@@ -27,7 +27,7 @@ import java.util.List;
 
 public class MedianofTwoSortedArrays_4 {
     //同时遍历两个数组挑小的的先遍历
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int i= 0;
         int j =0;
         int len1 = nums1.length;
@@ -56,13 +56,16 @@ public class MedianofTwoSortedArrays_4 {
         if (list.size()%2 == 1){
             return list.get(list.size()/2);
         }else {
-            return list.get(list.size()/2+list.size()/2-1)/2.0;
+            return (list.get(list.size()/2)+list.get(list.size()/2-1))/2.0;
         }
 
     }
 
 
     public static void main(String[] args) {
+        int[] nums1 = {1,2};
+        int[] nums2 = {3,4};
+        System.out.println(findMedianSortedArrays(nums1, nums2));
 
     }
 }
