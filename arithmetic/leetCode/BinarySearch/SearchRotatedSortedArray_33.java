@@ -55,15 +55,7 @@ public class SearchRotatedSortedArray_33 {
                 low = mid + 1;
             } else return mid;
         }
-        //上面的if，else语句相当于
-//        if (target < nums[mid]) {
-//            high = mid - 1;
-//        } else {
-//            if (target > nums[mid]) {
-//                low = mid + 1;
-//            } else
-//                return mid;
-//        }
+
         return -1;
     }
 
