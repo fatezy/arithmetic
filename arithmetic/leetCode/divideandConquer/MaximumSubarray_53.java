@@ -10,6 +10,7 @@ package divideandConquer;
 //        the contiguous subarray [4,−1,2,1] has the largest sum = 6.
     //找出最大子串和
     //如果加出来的和不小于0，从前向后不停的加
+
 public class MaximumSubarray_53 {
     public int maxSubArray(int[] nums) {
         if(nums.length==0) return 0;
