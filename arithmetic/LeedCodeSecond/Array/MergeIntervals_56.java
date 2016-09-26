@@ -14,7 +14,7 @@ import java.util.List;
         For example,
         Given [1,3],[2,6],[8,10],[15,18],
         return [1,6],[8,10],[15,18].*/
-
+//合并重叠项
 public class MergeIntervals_56 {
     public List<Interval> merge(List<Interval> intervals) {
         Collections.sort(intervals, new Comparator<Interval>() {

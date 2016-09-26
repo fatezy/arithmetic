@@ -44,7 +44,7 @@ public class JumpGame_55 {
 
 
     public static void main(String[] args) {
-        int[] nums = {1,1,2,2,0,1,1};
+        int[] nums = {5,4,0,2,0,1,0,1,0};
         System.out.println(canJump(nums));
 
     }
