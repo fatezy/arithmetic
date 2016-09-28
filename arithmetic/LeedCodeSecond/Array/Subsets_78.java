@@ -26,6 +26,7 @@ import java.util.List;
         []
         ]*/
     //找出所有的组合
+    //经典的回溯题
 public class Subsets_78 {
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();

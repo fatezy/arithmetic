@@ -37,6 +37,7 @@ public class WordSearch_79 {
 
 
     public boolean backTrack(char[][] board,String word,int x,int y,int i){
+        if (i == word.length()) return true;
         if (x<0||y<0||x>board.length-1||y>board[0].length-1) return false;
         if (word.charAt(i) != board[x][y]) return false;
         board[x][y] ^= 256;
