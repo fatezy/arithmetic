@@ -48,7 +48,7 @@ public class Subsets_78 {
 // [1, 3], [1, 3, 4], [1, 4], [2], [2, 3], [2, 3, 4], [2, 4], [3], [3, 4], [4]]
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4};
+        int[] nums = {1,2,3};
 
         System.out.println(subsets(nums));
 
