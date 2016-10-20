@@ -4,6 +4,7 @@ import util.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * author： 张亚飞
@@ -38,6 +39,28 @@ public class BinaryTreeInorderTraversal_94 {
 
         return res;
     }
+
+
+//用迭代的方式解决
+    public List<Integer> inorderTraversal2(TreeNode root) {
+        List<Integer> list = new ArrayList<Integer>();
+
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode cur = root;
+
+        while(cur!=null || !stack.empty()){
+            while(cur!=null){
+                stack.add(cur);
+                cur = cur.left;
+            }
+            cur = stack.pop();
+            list.add(cur.val);
+            cur = cur.right;
+        }
+
+        return list;
+    }
+
 
     public static void main(String[] args) {
             TreeNode node = new TreeNode(1);
