@@ -11,7 +11,6 @@ package hashTable;
 //        S = "ADOBECODEBANC"
 //        T = "ABC"
 //        Minimum window is "BANC".
-// TODO: 2016/8/4
 //给你一个字符串S和T，找出包含T中所有字母的S的最短子序列
 public class MinimumWindowSubstring_76 {
     public static String minWindow(String s, String t) {
@@ -55,6 +54,9 @@ public class MinimumWindowSubstring_76 {
         return s.substring(min_start, min_start+min_length);
     }
     public static void main(String[] args) {
+        String s = "ADOBECODEBANC";
+        String t = "ABC";
+        minWindow(s,t);
 
     }
 }
