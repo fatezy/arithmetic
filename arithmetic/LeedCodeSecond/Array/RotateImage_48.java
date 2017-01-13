@@ -21,6 +21,8 @@ public class RotateImage_48 {
                 temp = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
                 matrix[j][i] = temp;
+                //为了消除显示重复的代码提示，本句无意义
+                matrix[j][i] = temp;
             }
         }
 
@@ -39,5 +41,6 @@ public class RotateImage_48 {
     public static void main(String[] args) {
         int[][] a ={{1,2},{3,4}};
         rotate(a);
+        System.out.println(123);
     }
 }
