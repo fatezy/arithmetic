@@ -19,6 +19,7 @@ import java.util.Stack;
 //        After removing the second node from the end, the linked list becomes 1->2->3->5.
     //移除倒数第n个节点
 public class RemoveNthNodeFromEndofList_19 {
+    //用栈来处理
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null) return null;
         Stack<ListNode> stack = new Stack<>();
@@ -39,6 +40,30 @@ public class RemoveNthNodeFromEndofList_19 {
 
         return head;
     }
+
+
+    //快慢指针法
+    public ListNode removeNthFromEnd2(ListNode head, int n) {
+
+        ListNode start = new ListNode(0);
+        ListNode slow = start, fast = start;
+        slow.next = head;
+
+        //Move fast in front so that the gap between slow and fast becomes n
+        for(int i=1; i<=n+1; i++)   {
+            fast = fast.next;
+        }
+        //Move fast to the end, maintaining the gap
+        while(fast != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        //Skip the desired node
+        slow.next = slow.next.next;
+        return start.next;
+    }
+
+
 
 
     public static void main(String[] args) {

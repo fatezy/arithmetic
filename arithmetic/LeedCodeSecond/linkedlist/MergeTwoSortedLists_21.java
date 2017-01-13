@@ -49,6 +49,29 @@ public class MergeTwoSortedLists_21 {
         return l1.val>=l2.val?l2:l1;
     }
 
+    /**
+     * 和第一种解法思路其实是相同的，只不过解法更优
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public ListNode mergeTwoLists3(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode cur = dummy;
+        cur.next =  l1;
+        //l1始终与cur同步保存的为较小值
+        while(l1 != null && l2 != null) {
+            if(l1.val > l2.val) {
+                cur.next = l2;
+                l2 = l1;
+            }
+            cur = cur.next;
+            l1 = cur.next;
+        }
+        if(l2 != null) cur.next = l2;
+        return dummy.next;
+    }
+
 
     public static void main(String[] args) {
         Link_List link_list = new Link_List();

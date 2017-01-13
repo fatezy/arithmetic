@@ -47,6 +47,7 @@ public class MergeTwoLists_21 {
         ListNode dummy = new ListNode(-1);
         ListNode cur = dummy;
         cur.next =  l1;
+        //l1始终与cur同步保存的为较小值
         while(l1 != null && l2 != null) {
             if(l1.val > l2.val) {
                 cur.next = l2;
