@@ -1,5 +1,5 @@
-import util.Link_List;
-import util.ListNode;
+import leetCode.util.Link_List;
+import leetCode.util.ListNode;
 
 /**
  * author： 张亚飞

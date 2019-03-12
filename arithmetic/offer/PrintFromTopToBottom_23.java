@@ -1,4 +1,4 @@
-import util.TreeNode;
+import leetCode.util.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

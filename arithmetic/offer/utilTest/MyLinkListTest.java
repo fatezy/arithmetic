@@ -3,7 +3,7 @@
  */
 package utilTest;
 
-import util.MyLinkList;
+import leetCode.util.MyLinkList;
 
 /**
  * @author 张亚飞
