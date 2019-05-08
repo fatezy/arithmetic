@@ -1,3 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 /arithmetic/.classpath
 /arithmetic/.project
+/.idea/
+/target/
+/output/
