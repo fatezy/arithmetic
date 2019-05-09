@@ -1,7 +1,7 @@
-package leetCode.divideandConquer;
+package leetcode.divideandConquer;
 
-import leetCode.util.Link_List;
-import leetCode.util.ListNode;
+import leetcode.util.Link_List;
+import leetcode.util.ListNode;
 
 /**
  * author： 张亚飞

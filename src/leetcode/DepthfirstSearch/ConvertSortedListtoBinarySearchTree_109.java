@@ -1,7 +1,7 @@
-package leetCode.DepthfirstSearch;
+package leetcode.DepthfirstSearch;
 
-import leetCode.util.ListNode;
-import leetCode.util.TreeNode;
+import leetcode.util.ListNode;
+import leetcode.util.TreeNode;
 
 /**
  * author： 张亚飞

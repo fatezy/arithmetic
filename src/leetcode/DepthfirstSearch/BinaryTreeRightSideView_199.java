@@ -1,6 +1,6 @@
-package leetCode.DepthfirstSearch;
+package leetcode.DepthfirstSearch;
 
-import leetCode.util.TreeNode;
+import leetcode.util.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

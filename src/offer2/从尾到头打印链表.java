@@ -1,6 +1,6 @@
 package offer2;
 
-import leetCode.util.ListNode;
+import leetcode.util.ListNode;
 import org.junit.Test;
 
 import java.util.ArrayList;

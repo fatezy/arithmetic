@@ -1,4 +1,4 @@
-package leetCode.Backtracking;
+package leetcode.Backtracking;
 
 /**
  * author： 张亚飞

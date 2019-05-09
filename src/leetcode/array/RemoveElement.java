@@ -1,4 +1,4 @@
-package leetCode.array;
+package leetcode.array;
 
 /**
  * 给出一个数组移除指定的数字，并返回移除后的长度

@@ -1,4 +1,4 @@
-package leetCode.greedy;
+package leetcode.greedy;
 
 /**
  * author： 张亚飞

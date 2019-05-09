@@ -1,10 +1,10 @@
 /**
  * 
  */
-package leetCode.linkList;
+package leetcode.linkList;
 
-import leetCode.util.LinkList;
-import leetCode.util.Node;
+import leetcode.util.LinkList;
+import leetcode.util.Node;
 
 /**
  * @author 张亚飞

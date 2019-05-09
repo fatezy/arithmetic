@@ -1,4 +1,4 @@
-package leetCode.TwoPoints;
+package leetcode.TwoPoints;
 
 /**
  * author： 张亚飞

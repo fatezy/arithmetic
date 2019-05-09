@@ -1,6 +1,6 @@
 package offer.reConstructBinaryTree_06;
 
-import leetCode.util.TreeNode;
+import leetcode.util.TreeNode;
 
 /**
  * author： 张亚飞

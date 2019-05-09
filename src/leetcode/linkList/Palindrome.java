@@ -1,13 +1,13 @@
 /**
  * 
  */
-package leetCode.linkList;
+package leetcode.linkList;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import leetCode.util.LinkList;
-import leetCode.util.Node;
+import leetcode.util.LinkList;
+import leetcode.util.Node;
 
 /**
  * 判断链表是否回文,用list储存链表，然后判断是否回文

@@ -1,6 +1,6 @@
-package leetCode.linkList;
+package leetcode.linkList;
 
-import leetCode.util.ListNode;
+import leetcode.util.ListNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

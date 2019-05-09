@@ -1,6 +1,6 @@
 package offer.reverseList_05;
 
-import leetCode.util.ListNode;
+import leetcode.util.ListNode;
 
 import java.util.ArrayList;
 import java.util.Stack;

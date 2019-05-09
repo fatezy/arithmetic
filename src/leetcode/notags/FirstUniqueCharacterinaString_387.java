@@ -1,4 +1,4 @@
-package leetCode.notags;
+package leetcode.notags;
 
 import java.util.HashMap;
 import java.util.Map;

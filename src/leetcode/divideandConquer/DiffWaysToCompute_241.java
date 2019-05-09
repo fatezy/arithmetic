@@ -1,4 +1,4 @@
-package leetCode.divideandConquer;
+package leetcode.divideandConquer;
 
 /**
  * author： 张亚飞

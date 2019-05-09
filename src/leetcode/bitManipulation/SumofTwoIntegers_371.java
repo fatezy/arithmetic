@@ -1,4 +1,4 @@
-package leetCode.bitManipulation;
+package leetcode.bitManipulation;
 
 /**
  * author： 张亚飞

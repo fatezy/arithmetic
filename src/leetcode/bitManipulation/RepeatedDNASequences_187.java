@@ -1,4 +1,4 @@
-package leetCode.bitManipulation;
+package leetcode.bitManipulation;
 
 import java.util.ArrayList;
 import java.util.HashSet;

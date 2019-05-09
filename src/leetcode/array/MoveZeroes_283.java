@@ -1,4 +1,4 @@
-package leetCode.array;
+package leetcode.array;
 
 /**就地移动数组中的0到最后
  * author： 张亚飞

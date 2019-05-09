@@ -1,4 +1,4 @@
-package leetCode.tree;
+package leetcode.tree;
 
 /**
  * author： 张亚飞

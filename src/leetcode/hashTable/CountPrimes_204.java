@@ -1,4 +1,4 @@
-package leetCode.hashTable;
+package leetcode.hashTable;
 
 /**
  * author： 张亚飞

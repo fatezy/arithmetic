@@ -1,4 +1,4 @@
-package leetCode.DepthfirstSearch;
+package leetcode.DepthfirstSearch;
 
 /**
  * author： 张亚飞

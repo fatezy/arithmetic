@@ -1,6 +1,6 @@
-package leetCode.tree;
+package leetcode.tree;
 
-import leetCode.util.TreeNode;
+import leetcode.util.TreeNode;
 
 /**
  * author： 张亚飞

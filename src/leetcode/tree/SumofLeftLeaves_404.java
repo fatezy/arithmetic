@@ -1,7 +1,7 @@
-package leetCode.tree;
+package leetcode.tree;
 
-import leetCode.util.Tree;
-import leetCode.util.TreeNode;
+import leetcode.util.Tree;
+import leetcode.util.TreeNode;
 
 import java.util.LinkedList;
 

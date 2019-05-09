@@ -1,4 +1,4 @@
-package leetCode.stack;
+package leetcode.stack;
 
 /**
  * author： 张亚飞

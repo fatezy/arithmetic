@@ -1,4 +1,4 @@
-package leetCode.BinarySearch;
+package leetcode.BinarySearch;
 
 /**
  * author： 张亚飞

@@ -1,4 +1,4 @@
-package leetCode.math;
+package leetcode.math;
 
 /**
  * author： 张亚飞

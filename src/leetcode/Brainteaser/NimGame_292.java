@@ -1,4 +1,4 @@
-package leetCode.Brainteaser;
+package leetcode.Brainteaser;
 
 /**
  * author： 张亚飞

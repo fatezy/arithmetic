@@ -1,8 +1,8 @@
 
-package leetCode.linkList;
+package leetcode.linkList;
 
-import leetCode.util.Link_List;
-import leetCode.util.ListNode;
+import leetcode.util.Link_List;
+import leetcode.util.ListNode;
 
 /**
  * @author 张亚飞

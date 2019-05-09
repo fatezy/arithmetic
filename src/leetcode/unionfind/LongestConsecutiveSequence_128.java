@@ -1,4 +1,4 @@
-package leetCode.unionfind;
+package leetcode.unionfind;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package leetCode.divideandConquer;
+package leetcode.divideandConquer;
 
 import java.util.ArrayList;
 import java.util.List;

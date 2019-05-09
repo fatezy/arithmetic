@@ -1,4 +1,4 @@
-package leetCode.dynamicProgramming;
+package leetcode.dynamicProgramming;
 
 import java.util.Stack;
 
