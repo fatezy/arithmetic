@@ -53,6 +53,26 @@ public class 反转链表 {
         反转链表 test = new 反转链表();
         test.reverseList(list.getFirstNode());
     }
+
+
+
+
+    public ListNode reverseList3(ListNode head){
+        if (head == null || head.next == null){
+            return head;
+        }
+
+        ListNode newHead = reverseList3(head.next);
+        ListNode node = head.next;
+        node.next = head;
+        head.next = null;
+
+        return newHead;
+    }
+
+
+
+
 }
 
  

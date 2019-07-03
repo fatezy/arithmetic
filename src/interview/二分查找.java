@@ -28,6 +28,24 @@ public class 二分查找 {
         return -1;
     }
 
+    public int BinarySearch2(int[] arr,int target){
+        int l =0,r = arr.length-1;
+        int mid;
+        while (l<=r){
+            mid = l+(r-l)/2;
+            if (arr[mid] == target){
+                return mid;
+            }else if (arr[mid]>target){
+                r = mid-1;
+            }else {
+                l = mid+1;
+            }
+        }
+        return -1;
+    }
+
+
+
     public static void main(String[] args) {
         System.out.println(123);
     }
