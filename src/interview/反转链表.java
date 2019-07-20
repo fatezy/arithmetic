@@ -51,23 +51,22 @@ public class 反转链表 {
         Link_List list = new Link_List();
         list.initList(1,2,3);
         反转链表 test = new 反转链表();
-        test.reverseList(list.getFirstNode());
+       ListNode node =  test.reverseList3(list.getFirstNode());
+        System.out.println(1);
     }
 
 
 
 
     public ListNode reverseList3(ListNode head){
-        if (head == null || head.next == null){
-            return head;
-        }
-
-        ListNode newHead = reverseList3(head.next);
-        ListNode node = head.next;
-        node.next = head;
-        head.next = null;
-
-        return newHead;
+       if (head == null || head.next == null){
+           return head;
+       }
+       ListNode newHead = reverseList3(head.next);
+       ListNode temp = head.next;
+       temp.next = head;
+       head.next = null;
+       return newHead;
     }
 
 
