@@ -14,7 +14,7 @@ public class 翻转二叉树 {
 
             invertTree(root.left);
             invertTree(root.right);
-        }
+    }
 
         return root;
 
