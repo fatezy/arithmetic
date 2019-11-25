@@ -1,9 +1,5 @@
 package systemdesign;
 
-import lombok.Data;
-import lombok.experimental.Accessors;
-import offer.findInPartiallySortedMatrix_03.FindTest;
-import sun.applet.resources.MsgAppletViewer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +7,7 @@ import java.util.PriorityQueue;
 
 /**
  * 缓存算法
- * 最近最少被使用算法
+ * 最不经常使用算法
  *
  * @author 张亚飞
  * @create 2019-11-24 21:36
