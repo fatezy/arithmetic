@@ -5,4 +5,5 @@ package A;
  * @create 2020-05-05 21:32
  **/
 public class A {
+
 }
